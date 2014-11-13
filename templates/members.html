@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+	<h1>Our Members:</h1>
+{% endblock %}
+
+{% block content %}
+	<div class="section member_list">
+		<ul class="row">
+		{% for member in members %}
+			<li class="member_item">
+				<div class=""member_photo><img src=""></div>
+				<div class="member_basic">
+					<div><span>Name:</span>{{member.firstname}} {{member.lastname}}</div>
+					<div><span>Position:</span> {{member.position}}</div>
+					<div><span>Grade:</span> {{member.grade}}</div>
+					<div><span>Major:</span> {{member.major}}</div>
+					<div><span>Email:</span> {{member.email}}</div>
+				</div>
+				<div class="member_intro">
+					<p>{{member.intro}}</p>
+				</div>
+			</li>
+		{% endfor %}
+			<div class="clear"></div>
+		</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+/* general */
+body {
+background-color:white;
+font-size:16px;
+font-style:normal;
+position:relative;
+font-family:"Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+}
+.row{
+width:1030px;
+max-width:100%;
+min-width:768px;
+margin:0 auto;
+}
+
+.clearfix{
+overflow:auto;
+}
+/* end general */
+
+/* header */
+.header{
+background-position:top center;
+background-repeat:no-repeat;
+position:relative;
+padding-top:50px;
+height:670px;
+}
+.header_logo{
+position:relative;
+}
+.header_menu.pure-menu{
+position:relative;
+width:60%;
+}
+.header_menu.pure-menu ul{
+line-height:63px;
+height:63px;
+float:right;
+}
+/* end header */
+/* content */
+.section{
+position:relative;
+margin-bottom:70px;
+}
+.row.sec_content{
+width:920px;
+}
+.section .sec_pic{
+height:307px;
+background:blue;
+}
+.section .sec_p{
+line-height:1.6;
+}
+/* end content */
+

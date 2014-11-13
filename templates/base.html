@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>MU Redlight</title>
+		<link href="../../static/css/pure-min.css" rel="stylesheet" type="text/css" />
+		<link href="../../static/css/main.css" rel="stylesheet" type"text/css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header_top_bar row pure-g-r">
+				<div class="header_logo pure-u-2-5">
+					<h2><a href="/">RedLight</a></h2>
+				</div>
+				<div class="header_menu pure-menu-open pure-menu pure-menu-horizontal pure-u-3-5">
+					<ul>
+						<li class="header_menu_item menu_home"><a href="/">Home</a></li>
+						<li class="header_menu_item menu_memb"><a href="/members">Members</a></li>
+						<li class="header_menu_item menu_about"><a href="/about">About Us</a></li>
+						<script type="text/javascript">
+						// Intext
+						// Judge the url, and add css code for current menu_item
+						</script>
+					</ul>
+				</div>
+			</div>
+			<div class="header_content row">
+				<div class="header_main">
+					{% block header %}
+					{% endblock %}
+				</div>
+			</div>
+		</header>
+		
+		{% block content %}
+		{% endblock %}
+		
+		<div class="footer">
+			<div class="row footer_content">
+				<div class="text_info">
+				</div>
+				<div class="contact_info">
+				</div>
+			</div>
+			<div class="row footer_info">
+			</div>
+		</div>
+	</body>
+</html>
