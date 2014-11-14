@@ -7,18 +7,18 @@
 
 {% block content %}
 	<div class="section member_list">
-		<ul class="row">
+		<ul class="row pure-g-r">
 		{% for member in members %}
-			<li class="member_item">
-				<div class=""member_photo><img src=""></div>
-				<div class="member_basic">
-					<div><span>Name:</span>{{member.firstname}} {{member.lastname}}</div>
-					<div><span>Position:</span> {{member.position}}</div>
-					<div><span>Grade:</span> {{member.grade}}</div>
-					<div><span>Major:</span> {{member.major}}</div>
-					<div><span>Email:</span> {{member.email}}</div>
+			<li class="member_item pure-u-1-2 pure-g-r">
+				<div class="member_photo pure-u-2-5"><img src=""></div>
+				<div class="member_basic pure-u-3-5">
+					<div class="basic_item"><span>Name:</span>{{member.firstname}} {{member.lastname}}</div>
+					<div class="basic_item"><span>Position:</span> {{member.position}}</div>
+					<div class="basic_item"><span>Grade:</span> {{member.grade}}</div>
+					<div class="basic_item"><span>Major:</span> {{member.major}}</div>
+					<div class="basic_item"><span>Email:</span> {{member.email}}</div>
 				</div>
-				<div class="member_intro">
+				<div class="member_intro pure-u-1">
 					<p>{{member.intro}}</p>
 				</div>
 			</li>
