@@ -1,6 +1,7 @@
 $(function(){
 		var secArea = $(".sec_content");
 		var card = $(".member_item");
+		var unfoldButton = $(".unfold_btn");
 		secArea.each(function(){
 				$(this).bind({
 						mouseenter:function(){
@@ -16,5 +17,16 @@ $(function(){
 				$(this).bind({
 						
 				});	
+		});
+
+		unfoldButton.each(function(){
+				$(this).bind({
+						mouseenter:function(){
+								$(this).parent().next().slideToggle();
+						},
+						mouseleave:function(){
+								$(this).parent().next().slideToggle();
+						}
+				});
 		});
 });
